@@ -67,10 +67,17 @@ p {
 /* Showcase */
 .showcase {
     height: 400px;
+    width: 100%;
     background-color: var(--primary-color);
     color: #fff;
-    position: relative;
+    justify-content: space-between;
 }
+
+.showcase-text {
+    text-align: left;
+    margin-top: 40px;
+}
+
 
 .showcase h1, .footer h1, .about h1 {
     font-family: 'Courgette', cursive;
@@ -87,16 +94,20 @@ p {
     font-size: 20px;
 }
 
+
 .showcase p {
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin: 20px 0;
 }
-
-.showcase .grid {
+/*
+.showcase .grid .grid-3{
     overflow: visible;
-    grid-template-columns: 55% 45%;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    /* grid-template-columns: 35% 35% 10%; 
+    gap: 30px; */
 }
 
 /*
